@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Plus Jakarta Sans", "sans-serif";
+}
+
+.heading {
+  font-family: "Futura LT", sans-serif;
+  color: #111;
+}
