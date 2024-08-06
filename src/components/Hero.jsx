@@ -1,11 +1,12 @@
 import hero from "../assets/hero.png";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
+import OverlayLeft from "../assets/home-overlay.png";
 
 const Hero = () => {
   return (
-    <div className="p-2 md:p-[14px]">
-      <div className="px-2 py-6 md:py-10 md:px-4 rounded-3xl bg-primaryColor">
+    <div className="p-2 md:p-[14px] ">
+      <div className="relative px-2 py-6 md:py-10 md:px-4 rounded-3xl bg-primaryColor isolate">
         <div className="max-w-[1410px] mx-auto px-2">
           <Navbar />
 
@@ -51,6 +52,14 @@ const Hero = () => {
               <img src={hero} alt="Hero" className="w-full" />
             </div>
           </div>
+        </div>
+
+        <div className="absolute top-0 left-0 -z-10">
+          <img src={OverlayLeft} alt="overlay" />
+        </div>
+
+        <div className="absolute bottom-0 right-0 rotate-180 -z-10">
+          <img src={OverlayLeft} alt="overlay" />
         </div>
       </div>
     </div>
